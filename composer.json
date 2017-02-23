@@ -1,0 +1,14 @@
+{
+    "name": "marcos/sped-efd",
+    "authors": [
+        {
+            "name": "Marcos Dantas",
+            "email": "marcos.adantas@hotmail.com"
+        }
+    ],
+    "autoload":{
+        "psr-4": {
+            "Marcos\\": "src/"
+        }
+    }
+}
