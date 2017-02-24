@@ -10,5 +10,6 @@
         "psr-4": {
             "Marcos\\": "src/"
         }
-    }
+    },
+    "minimum-stability": "dev"
 }
