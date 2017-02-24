@@ -165,7 +165,7 @@ class Spedefd
             $text .= $tags[$i] . '|';
         }
         $this->textLenght++;
-        $this->totalLinhas += $this->textLenght;
+        $this->totalLinhas++;
         $this->tiposRegistros[$codRegistro] += 1;
         return $text.PHP_EOL;
     }
@@ -473,7 +473,7 @@ class Spedefd
         $this->text .= $this->textTag('9900', '9090', '01');
         $this->text .= $this->textTag('9900', '9999', '01');
         $this->text .= $this->textTag('9090', $this->textLenght);
-        $this->text .= $this->textTag('9999', $this->totalLinhas);
+        $this->text .= $this->textTag('9999', $this->totalLinhas+1);
         return $this->text;
     }
 
