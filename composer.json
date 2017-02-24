@@ -1,5 +1,9 @@
 {
     "name": "marcos/sped-efd",
+    "type": "library",
+    "description": "Classe para geração do sped efd",
+    "keywords": ["sped-efd", "sped", "efd"],
+    "license": ["GPL-3.0+","LGPL-3.0+", "MIT"],
     "authors": [
         {
             "name": "Marcos Dantas",
