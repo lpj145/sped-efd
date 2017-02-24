@@ -1,9 +1,0 @@
-|0000|009|0|31122016|31122016|Sebastião Marcos Amorim Dantas|14268975000100|||||||||
-|0001|0|
-|0005|||Rua Sete de setembro|||||||
-|0100|Andre Pereira de Azevedo||||||||||||
-|0190|UN|UNIDADE|
-|0190|UNID|UNIDADE|
-|0190|UND|UNIDADE|
-|0200|0001|Item de cor marrom|||UN|00|28092800||||||
-|0220|UN|200|
