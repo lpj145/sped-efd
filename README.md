@@ -17,6 +17,10 @@ Identifica item no inventário
 
 `identificaInventario()`
 
+Para retornar em modo texto apenas precisa imprimir a classe:
+
+`echo $sped`
+
 Ao usar uma **IDE**, na seçao de ajuda, você poderá visualizar todos os parâmetros disponíveis.
 
 Atributos específicos estão em público para facilitar a construção do objeto sped.
