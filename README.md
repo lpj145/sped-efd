@@ -2,9 +2,9 @@
 Classe para criação de sped, apenas exemplo. Metodos explicados a baixo:
 
 ```$sped = new Marcos/Spedefd();```
-###Ate o momento funciona apenas o inventario. E o que preciso.
+###Ate o momento funciona apenas o inventário. É o que preciso.
 
-###Metodos disponiveis:
+###Metodos disponíveis:
 Identifica unidades de medidas no sped 
 
 `adicionarUnidadeMedidas()`
@@ -13,10 +13,10 @@ Adiciona produto ou serviço ao sped no bloco **220**
 
  `adicionarProdutoServico()`
 
-Identifica item no inventario
+Identifica item no inventário
 
 `identificaInventario()`
 
-Ao usar uma **IDE**, na seçao de ajuda, voce podera visualizar todos os parametros disponiveis.
+Ao usar uma **IDE**, na seçao de ajuda, você poderá visualizar todos os parâmetros disponíveis.
 
-Atributos especificos estao em publico para facilitar a definiçao do objeto sped.
+Atributos específicos estão em público para facilitar a construção do objeto sped.
