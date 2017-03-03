@@ -25,12 +25,12 @@ class Spedefd
      * @var string Insira a data em modo texto sem nenhum carater, apenas texto
      * ex: 31022017
      */
-    public $peridoInicial = '';
+    public $periodoInicial = '';
     /**
      * @var string Insira a data em modo texto sem nenhum carater, apenas texto
      * ex: 31022017
      */
-    public $peridoFinal = '';
+    public $periodoFinal = '';
     /**
      * @var Cnpj do contribuente
      */
@@ -179,8 +179,8 @@ class Spedefd
         return $this->text = $this->textTag('0000',
             $this->codVersao,
             $this->codFin,
-            $this->peridoInicial,
-            $this->peridoFinal,
+            $this->periodoInicial,
+            $this->periodoFinal,
             $this->razaoContribuente,
             $this->cnpjContribuente,
             $this->cpfContribuente,
