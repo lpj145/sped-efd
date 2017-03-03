@@ -24,8 +24,8 @@
       <file leaf-file-name="Spedefd.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Spedefd.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="299" column="47" lean-forward="false" selection-start-line="299" selection-start-column="47" selection-end-line="299" selection-end-column="47" />
+            <state relative-caret-position="415">
+              <caret line="510" column="35" lean-forward="false" selection-start-line="510" selection-start-column="35" selection-end-line="510" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -210,12 +210,12 @@
       <workItem from="1488542015674" duration="629000" />
       <workItem from="1488543248149" duration="14000" />
       <workItem from="1488543536952" duration="609000" />
-      <workItem from="1488545093596" duration="25000" />
+      <workItem from="1488545093596" duration="1457000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32174000" />
+    <option name="totallyTimeSpent" value="33606000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="30" width="1366" height="738" extended-state="0" />
@@ -405,8 +405,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Spedefd.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="299" column="47" lean-forward="false" selection-start-line="299" selection-start-column="47" selection-end-line="299" selection-end-column="47" />
+        <state relative-caret-position="415">
+          <caret line="510" column="35" lean-forward="false" selection-start-line="510" selection-start-column="35" selection-end-line="510" selection-end-column="35" />
           <folding />
         </state>
       </provider>
