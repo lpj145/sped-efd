@@ -234,6 +234,7 @@ class Spedefd
                 $this->cepContador,
                 $this->endContador,
                 $this->numContador,
+                $this->complContador,
                 $this->bairroContador,
                 $this->foneContador,
                 $this->faxContador,
