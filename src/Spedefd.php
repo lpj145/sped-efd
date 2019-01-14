@@ -297,7 +297,8 @@ class Spedefd
                 $this->produto[$i]['ex_ipi'],
                 $this->produto[$i]['cod_gen'],
                 $this->produto[$i]['cod_lst'],
-                $this->produto[$i]['aliq_icms']
+                $this->produto[$i]['aliq_icms'],
+                $this->produto[$i]['cest'] ?? ''
                 );
             $this->text .= $this->textTag('0220',
                 $this->produto[$i]['unid_inv'],
