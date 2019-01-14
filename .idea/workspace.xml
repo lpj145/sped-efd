@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83aa18d9-4621-48c9-8af2-e19812c58800" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Spedefd.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Spedefd.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,16 +18,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Spedefd.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="680">
-              <caret line="300" column="48" selection-start-line="300" selection-start-column="48" selection-end-line="300" selection-end-column="48" />
+              <caret line="300" column="49" selection-start-line="300" selection-start-column="49" selection-end-line="300" selection-end-column="49" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
@@ -52,8 +50,8 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/src/Spedefd.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/Spedefd.php" />
       </list>
     </option>
   </component>
@@ -141,12 +139,12 @@
       <workItem from="1488543248149" duration="14000" />
       <workItem from="1488543536952" duration="609000" />
       <workItem from="1488545093596" duration="1660000" />
-      <workItem from="1547497183645" duration="1648000" />
+      <workItem from="1547497183645" duration="1994000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35457000" />
+    <option name="totallyTimeSpent" value="35803000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-90" width="1936" height="1056" extended-state="6" />
@@ -201,13 +199,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Spedefd.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="300" column="48" selection-start-line="300" selection-start-column="48" selection-end-line="300" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.swp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -222,6 +213,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Spedefd.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="300" column="49" selection-start-line="300" selection-start-column="49" selection-end-line="300" selection-end-column="49" />
         </state>
       </provider>
     </entry>
