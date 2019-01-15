@@ -251,10 +251,11 @@ class Spedefd
     protected function identificarUnidades()
     {
         $unidadesLength = sizeof($this->unidadesMedida);
-        for ($i = 0; $i < $unidadesLength; $i++) {
-            $this->text .= $this->textTag('0190',
-                $this->unidadesMedida[$i]['unid'],
-                $this->unidadesMedida[$i]['desc']
+        foreach ($this->unidadesMedida as $unidade) {
+            $this->text .= $this->textTag(
+                '0190',
+                $unidade['unid'],
+                $unidade['desc']
             );
         }
         return $this->text;
@@ -269,7 +270,7 @@ class Spedefd
     public function adicionarUnidadeMedida($unid = '', $desc = '')
     {
         if ($unid != '') {
-            $this->unidadesMedida[] = [
+            $this->unidadesMedida[$unid] = [
                 'unid' => $unid,
                 'desc' => $desc
                 ];
@@ -373,9 +374,9 @@ class Spedefd
             $text .= $this->textTag('H010',
                 $this->itensiventario[$i]['cod_item'],
                 $this->itensiventario[$i]['unid'],
-                $this->itensiventario[$i]['qtd'],
-                $this->itensiventario[$i]['vl_unit'],
-                $this->itensiventario[$i]['vl_item'],
+                number_format($this->itensiventario[$i]['qtd'], 3, ',', ''),
+                number_format($this->itensiventario[$i]['vl_unit'], 6, ',', ''),
+                number_format($this->itensiventario[$i]['vl_item'], 2, ',', ''),
                 $this->itensiventario[$i]['ind_prop'],
                 $this->itensiventario[$i]['cod_part'],
                 $this->itensiventario[$i]['txt_compl'],
@@ -384,6 +385,7 @@ class Spedefd
                 );
             $valorTotal += (float)$this->itensiventario[$i]['vl_item'];
         }
+        $valorTotal = number_format($valorTotal, '2', ',', '');
         if ($iventarioLength > 0) {
             $this->text .= $this->textTag('H001', 0);
             $this->text .= $this->textTag('H005', $this->dataInventario->format('dmY'), $valorTotal, '01');
@@ -459,10 +461,16 @@ class Spedefd
     {
         $this->text .= $this->textTag('E001', '0');
         $this->text .= $this->textTag('E100', $this->periodoInicial, $this->periodoFinal);
-        $this->text .= $this->textTag('E110', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+        $this->text .= $this->textTag('E110', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ,0);
         $this->text .= $this->textTag('E116', '000', '0', $this->periodoFinal, '1210', '', '', '', '', '122015');
         $this->text .= $this->textTag('E990', '5');
 
+    }
+
+    private function abreEEncerraBlocoK()
+    {
+        $this->text .= $this->textTag('K001', '1');
+        $this->text .= $this->textTag('K990', '2');
     }
 
     private function abreencerraBlocog()
@@ -486,11 +494,11 @@ class Spedefd
         foreach ($this->tiposRegistros as $key => $tipoRegistro) {
             $this->text .= $this->textTag('9900', $key, $tipoRegistro);
         }
-        $this->text .= $this->textTag('9900', '9900', $this->textLenght);
-        $this->text .= $this->textTag('9900', '9090', '01');
+        $this->text .= $this->textTag('9900', '9900', $this->textLenght + 2);
+        $this->text .= $this->textTag('9900', '9990', '01');
         $this->text .= $this->textTag('9900', '9999', '01');
-        $this->text .= $this->textTag('9090', $this->textLenght);
-        $this->text .= $this->textTag('9999', $this->totalLinhas+1);
+        $this->text .= $this->textTag('9990', $this->textLenght + 2);
+        $this->text .= $this->textTag('9999', (substr_count( $this->text, "\n" ) + 1));
         return $this->text;
     }
 
@@ -511,6 +519,7 @@ class Spedefd
         $this->abreeencerraBlocoe();
         $this->abreencerraBlocog();
         $this->identificaInventario();
+        $this->abreEEncerraBlocoK();
         $this->abreencerrabloco01();
         $this->abreecerraBloco09();
 
