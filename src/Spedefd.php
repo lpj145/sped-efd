@@ -467,6 +467,12 @@ class Spedefd
 
     }
 
+    private function abreEEncerraBlocoB()
+    {
+        $this->text .= $this->textTag('B001', '1');
+        $this->text .= $this->textTag('B990', '2');
+    }
+
     private function abreEEncerraBlocoK()
     {
         $this->text .= $this->textTag('K001', '1');
@@ -482,7 +488,7 @@ class Spedefd
     private function abreencerrabloco01()
     {
         $this->text .= $this->textTag('1001', '0');
-        $this->text .= $this->textTag('1010', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N');
+        $this->text .= $this->textTag('1010', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N');
         $this->text .= $this->textTag('1990', '3');
         $this->textLenght = 0;
         return $this->text;
@@ -514,6 +520,7 @@ class Spedefd
         $this->identificarUnidades();
         $this->identificarProdutoseServicos();
         $this->encerrabloco0();
+        $this->abreEEncerraBlocoB();
         $this->abreeencerraBlococ();
         $this->abreeencerraBlocod();
         $this->abreeencerraBlocoe();
